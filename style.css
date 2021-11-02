@@ -8,4 +8,51 @@
 html {
   font-size: 16px;
   font-family: "Poppins", sans-serif;
+  background-color: var(--red);
+}
+body {
+  background: url("./images/bg-intro-desktop.png");
+  height: 100vh;
+}
+.main-container {
+  width: 68rem;
+  height: 90vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-text {
+  width: 47%;
+}
+.main-text h1 {
+  color: rgb(255, 255, 255);
+  font-size: 2.4rem;
+}
+.main-text p {
+  color: rgb(255, 255, 255);
+}
+.main-form {
+  width: 45%;
+}
+.main-form .form-info {
+  padding: 0.8rem 0;
+  margin-bottom: 1rem;
+  border-radius: 0.4rem;
+  box-shadow: 0 5px 5px hsla(248, 87%, 9%, 25%);
+  text-align: center;
+  font-weight: 700;
+  color: white;
+  font-size: 0.85rem;
+  background-color: var(--blue);
+}
+.main-form .form-info span {
+  font-weight: 400;
+}
+.form-field {
+  background-color: white;
+  padding: 2rem;
+}
+.form-field input {
+  width: 100%;
 }
