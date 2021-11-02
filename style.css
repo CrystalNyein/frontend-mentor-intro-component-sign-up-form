@@ -43,7 +43,7 @@ body {
   width: 45%;
 }
 .main-form .form-info {
-  padding: 0.8rem 0;
+  padding: 0.8rem 1.5rem;
   margin-bottom: 1rem;
   border-radius: 0.4rem;
   box-shadow: 0 5px 5px hsla(248, 87%, 9%, 25%);
@@ -54,6 +54,7 @@ body {
   background-color: var(--blue);
 }
 .main-form .form-info span {
+  font-size: 0.85rem;
   font-weight: 400;
 }
 .form-field {
@@ -135,4 +136,26 @@ button {
 }
 .form-note span {
   color: var(--red);
+}
+@media only screen and (max-width: 630px) {
+  html {
+    font-size: 14px;
+    text-align: center;
+  }
+  .main-container {
+    width: 25rem;
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .main-text {
+    width: 100%;
+  }
+  .main-form {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  footer {
+    width: 90vw;
+    margin: 0 auto;
+  }
 }
