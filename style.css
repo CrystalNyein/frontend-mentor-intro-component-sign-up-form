@@ -37,6 +37,7 @@ body {
 }
 .main-text p {
   color: rgb(255, 255, 255);
+  font-size: 0.95rem;
 }
 .main-form {
   width: 45%;
@@ -72,6 +73,10 @@ body {
 .form-field input::placeholder {
   font-weight: 600;
   color: hsl(250, 12%, 58%);
+}
+.form-field input:active,
+.form-field input:focus {
+  border: 1px solid var(--dark-blue);
 }
 .error input,
 .error-email input {
