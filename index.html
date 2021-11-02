@@ -17,7 +17,6 @@
       rel="stylesheet"
     />
 
-    <script src="./index.js"></script>
     <title>Frontend Mentor | Intro component with sign up form</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -49,7 +48,7 @@
         <div class="form-info">
           Try it free 7 days <span>then $20/mo. thereafter</span>
         </div>
-        <div class="form-field">
+        <form class="form-field" id="form" novalidate>
           <div class="f-name-group input-group">
             <input
               type="text"
@@ -113,16 +112,14 @@
             />
             <p class="error-text">Password cannot be empty</p>
           </div>
-          <button type="submit" onclick="validateForm()">
-            Claim your free trial
-          </button>
+          <button type="submit" id="btn">Claim your free trial</button>
           <p class="success-text">Success! Check your mail for confirmation.</p>
 
           <p class="form-note">
             By clicking the button, you are agreeing to our
             <span>Terms and Services</span>
           </p>
-        </div>
+        </form>
       </div>
     </div>
 
@@ -134,5 +131,7 @@
         >. Coded by <a href="https://github.com/CrystalNyein">Crystal Nyein</a>.
       </p>
     </footer>
+
+    <script src="./index.js"></script>
   </body>
 </html>

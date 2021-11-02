@@ -132,6 +132,12 @@ button {
   box-shadow: 0 2px 5px hsl(154, 57%, 41%);
   text-transform: uppercase;
   font-weight: 500;
+  transition: 0.3s;
+}
+
+button:hover {
+  opacity: 0.8;
+  cursor: pointer;
 }
 .form-note {
   font-size: 0.65rem;
