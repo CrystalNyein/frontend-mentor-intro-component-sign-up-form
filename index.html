@@ -42,16 +42,77 @@
         </p>
       </div>
       <div class="main-form">
-        <div class="form-info">Try it free 7 days then $20/mo. thereafter</div>
-        <input type="text" name="first-name" id="first-name" required />
-        <input type="text" name="last-name" id="last-name" required />
-        <input type="email" name="email" id="email" required />
-        <input type="password" name="password" id="password" required />
-        <button type="submit">Claim your free trial</button>
-        <p class="form-note">
-          By clicking the button, you are agreeing to our
-          <span>Terms and Services</span>
-        </p>
+        <div class="form-info">
+          Try it free 7 days <span>then $20/mo. thereafter</span>
+        </div>
+        <div class="form-field">
+          <div class="f-name-group input-group">
+            <input
+              type="text"
+              name="first-name"
+              id="first-name"
+              placeholder="First Name"
+              required
+            />
+            <img
+              class="error-icon"
+              src="./images/icon-error.svg"
+              alt="Error icon"
+            />
+            <p class="error-text">First Name cannot be empty</p>
+          </div>
+          <div class="l-name-group input-group">
+            <input
+              type="text"
+              name="last-name"
+              id="last-name"
+              placeholder="Last Name"
+              required
+            />
+            <img
+              class="error-icon"
+              src="./images/icon-error.svg"
+              alt="Error icon"
+            />
+            <p class="error-text">Last Name cannot be empty</p>
+          </div>
+          <div class="email-group input-group">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email"
+              required
+            />
+            <img
+              class="error-icon"
+              src="./images/icon-error.svg"
+              alt="Error icon"
+            />
+            <p class="error-text">Email cannot be empty</p>
+            <p class="error-format">Looks like this is not an email</p>
+          </div>
+          <div class="password-group input-group">
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Password"
+              required
+            />
+            <img
+              class="error-icon"
+              src="./images/icon-error.svg"
+              alt="Error icon"
+            />
+            <p class="error-text">Password cannot be empty</p>
+          </div>
+          <button type="submit">Claim your free trial</button>
+          <p class="form-note">
+            By clicking the button, you are agreeing to our
+            <span>Terms and Services</span>
+          </p>
+        </div>
       </div>
     </div>
 

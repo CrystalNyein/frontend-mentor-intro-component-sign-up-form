@@ -5,17 +5,23 @@
   --dark-blue: hsl(249, 10%, 26%);
   --grayish-blue: hsl(246, 25%, 77%);
 }
+* {
+  outline: none;
+  box-shadow: none;
+}
 html {
   font-size: 16px;
   font-family: "Poppins", sans-serif;
   background-color: var(--red);
 }
 body {
+  margin: 0;
   background: url("./images/bg-intro-desktop.png");
   height: 100vh;
 }
 .main-container {
   width: 68rem;
+  max-width: 90vw;
   height: 90vh;
   margin: 0 auto;
   display: flex;
@@ -52,7 +58,76 @@ body {
 .form-field {
   background-color: white;
   padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 5px 5px hsla(248, 87%, 9%, 25%);
 }
 .form-field input {
+  width: calc(100% - 3rem - 2px);
+  padding: 0.9rem 1.5rem;
+  font-weight: 600;
+  font-size: 0.92rem;
+  border: 1px solid var(--grayish-blue);
+  border-radius: 0.2rem;
+}
+.form-field input::placeholder {
+  font-weight: 600;
+  color: hsl(250, 12%, 58%);
+}
+.error input,
+.error-email input {
+  border-color: var(--red);
+  color: var(--red);
+}
+
+.form-field .input-group {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.error-icon {
+  position: absolute;
+  right: 1rem;
+  top: 0.9rem;
+  width: 1.3rem;
+  display: none;
+}
+.error .error-icon,
+.error-email .error-icon {
+  display: block;
+}
+.input-group .error-text,
+.input-group .error-format {
+  display: block;
+  text-align: right;
+  font-size: 0.7rem;
+  margin: 0;
+  margin-top: 0.2rem;
+  color: var(--red);
+  display: none;
+}
+.error .error-text,
+.error-email .error-format {
+  display: block;
+}
+button {
+  background-color: var(--green);
+  color: white;
+  letter-spacing: 0.05rem;
   width: 100%;
+  padding: 0.9rem 0;
+  border: none;
+  border-radius: 0.2rem;
+  box-shadow: 0 2px 5px hsl(154, 57%, 41%);
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.form-note {
+  font-size: 0.65rem;
+  text-align: center;
+  color: var(--grayish-blue);
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+}
+.form-note span {
+  color: var(--red);
 }
