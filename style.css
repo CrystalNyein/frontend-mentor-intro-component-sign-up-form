@@ -78,13 +78,19 @@ body {
 .form-field input:active,
 .form-field input:focus {
   border: 1px solid var(--dark-blue);
+  color: var(--dark-blue);
 }
 .error input,
 .error-email input {
   border-color: var(--red);
-  color: var(--red);
 }
-
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+  box-shadow: 0 0 0 30px white inset !important;
+}
 .form-field .input-group {
   position: relative;
   margin-bottom: 1rem;
@@ -136,6 +142,18 @@ button {
 }
 .form-note span {
   color: var(--red);
+}
+.success-text {
+  display: block;
+  text-align: center;
+  font-size: 0.7rem;
+  margin: 0;
+  margin-top: 0.5rem;
+  color: var(--green);
+  display: none;
+}
+.success .success-text {
+  display: block;
 }
 @media only screen and (max-width: 630px) {
   html {

@@ -87,6 +87,7 @@
               id="email"
               placeholder="Email"
               required
+              onfocus="removeColor()"
             />
             <img
               class="error-icon"
@@ -102,6 +103,7 @@
               name="password"
               id="password"
               placeholder="Password"
+              onkeyup="checkEnter(event)"
               required
             />
             <img
@@ -111,7 +113,11 @@
             />
             <p class="error-text">Password cannot be empty</p>
           </div>
-          <button type="submit">Claim your free trial</button>
+          <button type="submit" onclick="validateForm()">
+            Claim your free trial
+          </button>
+          <p class="success-text">Success! Check your mail for confirmation.</p>
+
           <p class="form-note">
             By clicking the button, you are agreeing to our
             <span>Terms and Services</span>
